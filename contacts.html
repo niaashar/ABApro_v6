@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ABA_pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro" class="logo__img">
+                    <span class="logo__text">ABA_pro</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="myths.html" class="nav__link">Мифы</a>
+                    <a href="manifesto.html" class="nav__link">Манифест</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+                    <a href="cabinet.html" class="btn btn--small">Личный кабинет</a>
+                </nav>
+                <button class="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Контакты</h1>
+            <p class="page-header__subtitle">Свяжитесь с нами любым удобным способом</p>
+        </div>
+    </section>
+
+    <section class="contact section">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h2>Как связаться с ABA_pro</h2>
+                    <p class="contact__text">Выберите удобный способ связи. Я отвечу в ближайшее время.</p>
+                    <div class="contact__methods">
+                        <div class="contact__method">
+                            <span class="contact__icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@aba-pro.ru">info@aba-pro.ru</a>
+                            </div>
+                        </div>
+                        <div class="contact__method">
+                            <span class="contact__icon">📱</span>
+                            <div>
+                                <h4>Телефон / Мессенджеры</h4>
+                                <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+                                <p>WhatsApp, Telegram</p>
+                            </div>
+                        </div>
+                        <div class="contact__method">
+                            <span class="contact__icon">📍</span>
+                            <div>
+                                <h4>Формат работы</h4>
+                                <p>Онлайн по всему миру</p>
+                                <p>Офлайн — по договорённости</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__hours">
+                        <h4>Время для связи</h4>
+                        <p>Пн-Пт: 9:00 — 18:00 (по МСК)</p>
+                        <p>Ответ в течение 24 часов</p>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper">
+                    <h3>Задайте вопрос</h3>
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__group">
+                            <label for="name">Как к вам обращаться</label>
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="contact">Email или телефон</label>
+                            <input type="text" id="contact" name="contact" placeholder="Для связи" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message">Ваш вопрос</label>
+                            <textarea id="message" name="message" placeholder="Опишите ваш вопрос" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Отправить вопрос</button>
+                        <p class="form__note">🧩 Пазлы начинают собираться</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-preview section section--light">
+        <div class="container">
+            <h2 class="section__title">Частые вопросы</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>С чего начать?</h4>
+                    <p>Лучше всего начать с разовой консультации. Это поможет прояснить ситуацию.</p>
+                    <a href="services.html#consultation">Подробнее →</a>
+                </div>
+                <div class="faq-item">
+                    <h4>Работаете ли вы онлайн?</h4>
+                    <p>Да, большинство услуг доступны в онлайн-формате.</p>
+                    <a href="services.html">Все услуги →</a>
+                </div>
+                <div class="faq-item">
+                    <h4>Как долго длится сопровождение?</h4>
+                    <p>Сопровождение всегда имеет цель и завершение.</p>
+                    <a href="services.html#support">Подробнее →</a>
+                </div>
+                <div class="faq-item">
+                    <h4>Что если мне не подойдет?</h4>
+                    <p>Я честно скажу, если запрос вне моей компетенции.</p>
+                    <a href="manifesto.html">Этический манифест →</a>
+                </div>
+            </div>
+            <div class="faq-preview__buttons">
+                <a href="myths.html" class="btn btn--outline">Разрушить мифы</a>
+                <a href="form.html" class="btn btn--primary">Записаться на консультацию</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta section section--primary">
+        <div class="container">
+            <h2 class="cta__title">Готовы обсудить вашу ситуацию?</h2>
+            <p class="cta__text">Запишитесь на консультацию — разберёмся вместе</p>
+            <a href="form.html" class="btn btn--white btn--large">Записаться на консультацию</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro">
+                    <span>ABA_pro</span>
+                </div>
+                <div class="footer__info">
+                    <p>Владелец: Слесь Ирина Анатольевна</p>
+                    <p>Путь включения ребёнка в реальный мир</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="myths.html">Мифы</a>
+                    <a href="manifesto.html">Манифест</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="cabinet.html">Личный кабинет</a>
+                </nav>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 ABA_pro. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

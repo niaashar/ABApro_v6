@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — ABA_pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro" class="logo__img">
+                    <span class="logo__text">ABA_pro</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="myths.html" class="nav__link">Мифы</a>
+                    <a href="manifesto.html" class="nav__link">Манифест</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                    <a href="cabinet.html" class="btn btn--small btn--active">Личный кабинет</a>
+                </nav>
+                <button class="burger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="auth-section section" id="authSection">
+        <div class="container">
+            <div class="auth-wrapper">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Вход</button>
+                    <button class="auth-tab" data-tab="register">Регистрация</button>
+                    <button class="auth-tab" data-tab="owner">Владелец</button>
+                </div>
+
+                <div class="auth-form active" id="loginForm">
+                    <h2>Вход в личный кабинет</h2>
+                    <p class="auth-subtitle">Для клиентов и специалистов</p>
+                    <form onsubmit="handleLogin(event)">
+                        <div class="form__group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="login-password">Пароль</label>
+                            <input type="password" id="login-password" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Войти</button>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="registerForm">
+                    <h2>Регистрация</h2>
+                    <form onsubmit="handleRegister(event)">
+                        <div class="form__group">
+                            <label for="reg-name">Ваше имя</label>
+                            <input type="text" id="reg-name" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="reg-password">Пароль</label>
+                            <input type="password" id="reg-password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Зарегистрироваться</button>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="ownerForm">
+                    <h2>Вход для владельца</h2>
+                    <p class="auth-subtitle">Слесь Ирина Анатольевна</p>
+                    <form onsubmit="handleOwnerLogin(event)">
+                        <div class="form__group">
+                            <label for="owner-login">Логин</label>
+                            <input type="text" id="owner-login" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="owner-password">Пароль</label>
+                            <input type="password" id="owner-password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard section" id="clientDashboard" style="display: none;">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Личный кабинет</h1>
+                <button class="btn btn--outline btn--small" onclick="handleLogout()">Выйти</button>
+            </div>
+            <div class="dashboard-grid">
+                <aside class="dashboard-sidebar">
+                    <nav class="dashboard-nav">
+                        <a href="#my-cases" class="dashboard-nav__link active">Мои кейсы</a>
+                        <a href="#documents" class="dashboard-nav__link">Документы</a>
+                        <a href="#templates" class="dashboard-nav__link">Шаблоны</a>
+                        <a href="#checklist" class="dashboard-nav__link">Чек-лист</a>
+                    </nav>
+                </aside>
+                <main class="dashboard-content">
+                    <div class="dashboard-section" id="my-cases">
+                        <h3>Мои кейсы</h3>
+                        <div class="cases-list">
+                            <div class="case-card">
+                                <div class="case-card__header">
+                                    <h4>Развитие коммуникации</h4>
+                                    <span class="case-status case-status--active">Активен</span>
+                                </div>
+                                <div class="case-card__progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar__fill" style="width: 60%"></div>
+                                    </div>
+                                    <p>Прогресс: 60%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro">
+                    <span>ABA_pro</span>
+                </div>
+                <div class="footer__info">
+                    <p>Владелец: Слесь Ирина Анатольевна</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="cabinet.html">Личный кабинет</a>
+                </nav>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 ABA_pro. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function handleLogin(e) { e.preventDefault(); document.getElementById('authSection').style.display = 'none'; document.getElementById('clientDashboard').style.display = 'block'; }
+        function handleRegister(e) { e.preventDefault(); alert('Регистрация успешна!'); }
+        function handleOwnerLogin(e) { e.preventDefault(); document.getElementById('authSection').style.display = 'none'; }
+        function handleLogout() { document.getElementById('clientDashboard').style.display = 'none'; document.getElementById('authSection').style.display = 'block'; }
+        document.querySelectorAll('.auth-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab + 'Form').classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

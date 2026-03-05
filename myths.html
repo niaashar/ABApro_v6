@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мифы об АВА — ABA_pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro" class="logo__img">
+                    <span class="logo__text">ABA_pro</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link">Услуги</a>
+                    <a href="myths.html" class="nav__link nav__link--active">Мифы</a>
+                    <a href="manifesto.html" class="nav__link">Манифест</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                    <a href="cabinet.html" class="btn btn--small">Личный кабинет</a>
+                </nav>
+                <button class="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Мифы об АВА-терапии и правда от ABA_pro</h1>
+            <p class="page-header__subtitle">Разрушаем стереотипы</p>
+        </div>
+    </section>
+
+    <section class="myths-page section">
+        <div class="container">
+            <div class="myths-intro">
+                <h2 class="section__title">Вокруг АВА много мифов</h2>
+                <p class="section__subtitle">Прежде чем рассказывать, <em>как</em> мы работаем, важно прояснить, <strong>чем АВА не является</strong>.</p>
+            </div>
+
+            <div class="myths-list-full">
+                <div class="myth-item" data-myth="1">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/1. Мифы - беж.png" alt="Миф 1" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «АВА — это дрессировка»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Современная АВА — это не про подчинение, а про понимание. Мы учим ребенка думать, а не просто повторять.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>Именно поэтому первый шаг в ABA_pro — <strong>Прояснение</strong>, а не «начало занятий».</p>
+                                <a href="services.html#consultation" class="btn btn--small btn--outline">Как проходит прояснение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-item" data-myth="2">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/2. Мифы - зелен.png" alt="Миф 2" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «АВА подавляет личность ребёнка»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Личность не подавляется, когда ребёнка слышат. Мы видим в нем автора собственной картины.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>В ABA_pro мы работаем <strong>в реальной жизни</strong>, а не в искусственных условиях.</p>
+                                <a href="services.html#intensive" class="btn btn--small btn--outline">Как выглядит погружение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-item" data-myth="3">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/3. Мифы - голубой.png" alt="Миф 3" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «АВА — это набор упражнений»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Жизнь — главный контекст обучения. Мы используем естественные поощрения и опираемся на интерес ребенка.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>Именно поэтому в ABA_pro есть этап <strong>Погружения</strong>, где мы смотрим на повседневность.</p>
+                                <a href="services.html" class="btn btn--small btn--outline">Путь ABA_pro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-item" data-myth="4">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/1. 4 пазла - беж.png" alt="Миф 4" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «АВА — это жёсткий план без гибкости»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Этичная АВА не живёт в жёстких схемах. Программа адаптируется под темп и особенности вашего ребенка.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>Индивидуальная программа в ABA_pro — это <strong>карта</strong>, которая может меняться.</p>
+                                <a href="services.html#program" class="btn btn--small btn--outline">Как создаётся программа</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-item" data-myth="5">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/2. 4 пазла - темн зел.png" alt="Миф 5" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «АВА — это навсегда»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Ни один этап не должен длиться дольше, чем нужно. Завершение — такая же ценность, как и начало.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>Сопровождение в ABA_pro всегда имеет <strong>цель и завершение</strong>.</p>
+                                <a href="services.html#support" class="btn btn--small btn--outline">Как устроено сопровождение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myth-item" data-myth="6">
+                    <div class="myth-item__header" onclick="toggleMyth(this)">
+                        <img src="assets/images/4. 4 пазла - голубой.png" alt="Миф 6" class="myth-item__icon">
+                        <div class="myth-item__content">
+                            <h3 class="myth-item__title">Миф: «Это нужно только при тяжелых нарушениях»</h3>
+                            <span class="myth-item__toggle">Показать правду ↓</span>
+                        </div>
+                    </div>
+                    <div class="myth-item__body">
+                        <div class="truth-card">
+                            <h4>Правда ABA_pro:</h4>
+                            <p>Методы ABA работают для любых задач: от обучения туалету до развития речи и социальных навыков.</p>
+                            <div class="truth-connection">
+                                <strong>Связь с нашим путем:</strong>
+                                <p>Мы открыты для всех, кто хочет понять ребенка. Каждый пазл важен.</p>
+                                <a href="index.html#for-whom" class="btn btn--small btn--outline">Кому подойдет ABA_pro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="myths-bridge">
+                <h2>Когда страхи и мифы становятся понятнее, проще увидеть, как именно устроен путь ABA_pro</h2>
+                <p>Ниже — не теория, а логика нашей работы.</p>
+                <div class="myths-bridge__buttons">
+                    <a href="services.html" class="btn btn--primary btn--large">Посмотреть путь ABA_pro</a>
+                    <a href="form.html" class="btn btn--outline btn--large">Прояснить ситуацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta section section--primary">
+        <div class="container">
+            <h2 class="cta__title">Остались вопросы?</h2>
+            <p class="cta__text">Задайте вопрос — развеем все сомнения</p>
+            <a href="contacts.html" class="btn btn--white btn--large">Задать вопрос</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro">
+                    <span>ABA_pro</span>
+                </div>
+                <div class="footer__info">
+                    <p>Владелец: Слесь Ирина Анатольевна</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="myths.html">Мифы</a>
+                    <a href="manifesto.html">Манифест</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="cabinet.html">Личный кабинет</a>
+                </nav>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 ABA_pro. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleMyth(header) {
+            const item = header.parentElement;
+            const body = item.querySelector('.myth-item__body');
+            const toggle = header.querySelector('.myth-item__toggle');
+            item.classList.toggle('active');
+            if (item.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + 'px';
+                if (toggle) toggle.textContent = 'Скрыть правду ↑';
+            } else {
+                body.style.maxHeight = '0';
+                if (toggle) toggle.textContent = 'Показать правду ↓';
+            }
+        }
+    </script>
+</body>
+</html>

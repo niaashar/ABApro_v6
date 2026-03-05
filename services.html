@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и Путь — ABA_pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro" class="logo__img">
+                    <span class="logo__text">ABA_pro</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="services.html" class="nav__link nav__link--active">Услуги</a>
+                    <a href="myths.html" class="nav__link">Мифы</a>
+                    <a href="manifesto.html" class="nav__link">Манифест</a>
+                    <a href="about.html" class="nav__link">О нас</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                    <a href="cabinet.html" class="btn btn--small">Личный кабинет</a>
+                </nav>
+                <button class="burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Выберите свой формат поддержки</h1>
+            <p class="page-header__subtitle">Вы можете начать с малого или доверить нам полное ведение кейса.</p>
+        </div>
+    </section>
+
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card" id="consultation">
+                    <div class="service-card__icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Консультация</h3>
+                    <p class="service-card__subtitle">Прояснение</p>
+                    <p class="service-card__text">Первая встреча, анализ запроса, ответы на вопросы. Определяем, где находится потерянный пазл.</p>
+                    <ul class="service-card__list">
+                        <li>🧩 Длительность: 60 минут</li>
+                        <li>🧩 Онлайн или офлайн</li>
+                        <li>🧩 Разовая встреча</li>
+                        <li>🧩 Подходит, если не знаете с чего начать</li>
+                    </ul>
+                    <a href="form.html?service=consultation" class="btn btn--primary">Записаться на консультацию</a>
+                </div>
+
+                <div class="service-card" id="intensive">
+                    <div class="service-card__icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Интенсив в семье</h3>
+                    <p class="service-card__subtitle">Погружение</p>
+                    <p class="service-card__text">Мы приезжаем к вам, чтобы заложить прочный фундамент навыков в естественной среде.</p>
+                    <ul class="service-card__list">
+                        <li>🧩 Погружение в вашу среду</li>
+                        <li>🧩 Отработка ключевых навыков</li>
+                        <li>🧩 Работа с семьей</li>
+                        <li>🧩 Быстрый старт</li>
+                    </ul>
+                    <a href="form.html?service=intensive" class="btn btn--primary">Запросить интенсив</a>
+                </div>
+
+                <div class="service-card" id="program">
+                    <div class="service-card__icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Разработка программы</h3>
+                    <p class="service-card__subtitle">Структура</p>
+                    <p class="service-card__text">Индивидуальный маршрут. Создаем подробную карту (программу) по сборке пазлов именно вашего ребенка.</p>
+                    <ul class="service-card__list">
+                        <li>🧩 Индивидуальный план</li>
+                        <li>🧩 Четкие цели и задачи</li>
+                        <li>🧩 Пошаговая стратегия</li>
+                        <li>🧩 Письменные рекомендации</li>
+                    </ul>
+                    <a href="form.html?service=program" class="btn btn--primary">Заказать программу</a>
+                </div>
+
+                <div class="service-card" id="support">
+                    <div class="service-card__icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Кураторство кейса</h3>
+                    <p class="service-card__subtitle">Путь рядом</p>
+                    <p class="service-card__text">Полное ведение. Мы сопровождаем вас на всем пути, контролируя процесс и корректируя программу.</p>
+                    <ul class="service-card__list">
+                        <li>🧩 Регулярные встречи</li>
+                        <li>🧩 Анализ динамики</li>
+                        <li>🧩 Корректировка программы</li>
+                        <li>🧩 Поддержка и навигация</li>
+                    </ul>
+                    <a href="form.html?service=support" class="btn btn--primary">Запросить сопровождение</a>
+                </div>
+
+                <div class="service-card service-card--full">
+                    <div class="service-card__icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Тематические встречи</h3>
+                    <p class="service-card__subtitle">Сообщество</p>
+                    <p class="service-card__text">Место, где родители и специалисты обмениваются опытом и поддержкой.</p>
+                    <div class="service-card__features">
+                        <div class="feature">
+                            <h4>Понимать поведение</h4>
+                            <p>Разбираем сложные ситуации</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Переносить навыки в жизнь</h4>
+                            <p>Практические кейсы</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Сохранять баланс</h4>
+                            <p>Забота о себе и семье</p>
+                        </div>
+                        <div class="feature">
+                            <h4>База для самостоятельной работы</h4>
+                            <p>Инструменты и материалы</p>
+                        </div>
+                    </div>
+                    <a href="contacts.html" class="btn btn--outline">Узнать о ближайших встречах</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="path-visual section section--light">
+        <div class="container">
+            <h2 class="section__title">Можно брать что-то одно, а можно пройти весь путь</h2>
+            <div class="path-flow">
+                <div class="path-flow__item">
+                    <div class="path-flow__number">1</div>
+                    <h3>Консультация</h3>
+                    <p>Диагностика. Поймем, где вы находитесь.</p>
+                </div>
+                <div class="path-flow__arrow">→</div>
+                <div class="path-flow__item">
+                    <div class="path-flow__number">2</div>
+                    <h3>Интенсив</h3>
+                    <p>Фундамент. Быстрый старт и отработка навыков.</p>
+                </div>
+                <div class="path-flow__arrow">→</div>
+                <div class="path-flow__item">
+                    <div class="path-flow__number">3</div>
+                    <h3>Программа</h3>
+                    <p>Стратегия. Четкий план на месяцы вперед.</p>
+                </div>
+                <div class="path-flow__arrow">→</div>
+                <div class="path-flow__item">
+                    <div class="path-flow__number">4</div>
+                    <h3>Сопровождение</h3>
+                    <p>Поддержка. Идем рядом, чтобы не сбиться.</p>
+                </div>
+            </div>
+            <p class="path-visual__note">🧩 Вы можете начать с любого шага. Пазлы складываются по мере готовности.</p>
+            <div class="path-visual__buttons">
+                <a href="form.html" class="btn btn--primary">Начать путь</a>
+                <a href="index.html" class="btn btn--outline">Вернуться на главную</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta section section--primary">
+        <div class="container">
+            <h2 class="cta__title">Не знаете, с чего начать?</h2>
+            <p class="cta__text">Помогу выбрать формат, который подойдет именно вам</p>
+            <a href="form.html" class="btn btn--white btn--large">Получить рекомендации</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro">
+                    <span>ABA_pro</span>
+                </div>
+                <div class="footer__info">
+                    <p>Владелец: Слесь Ирина Анатольевна</p>
+                    <p>Путь включения ребёнка в реальный мир</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="myths.html">Мифы</a>
+                    <a href="manifesto.html">Манифест</a>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="cabinet.html">Личный кабинет</a>
+                </nav>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 ABA_pro. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

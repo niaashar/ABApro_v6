@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель — ABA_pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Admin Navigation -->
+    <nav class="navbar navbar--admin">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/images/Лого.png" alt="ABA_pro Logo" class="logo-img">
+                    <span class="logo-text">ABA_pro | Админ</span>
+                </div>
+                <div class="dashboard-user">
+                    <span>Слесь Ирина Анатольевна</span>
+                    <button onclick="logout()" class="btn btn--secondary btn--small">Выйти</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Admin Dashboard -->
+    <section class="admin-dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Панель управления</h1>
+                <p>Владелец: Слесь Ирина Анатольевна</p>
+            </div>
+            
+            <!-- Stats Overview -->
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Активных кейсов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Новых запросов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Встреч на неделе</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">94%</div>
+                    <div class="stat-label">Удовлетворённость</div>
+                </div>
+            </div>
+            
+            <div class="admin-grid">
+                <!-- Client Management -->
+                <div class="admin-card">
+                    <h2>👥 Управление клиентами</h2>
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Клиент</th>
+                                <th>Статус</th>
+                                <th>Этап</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Иванова М.</td>
+                                <td><span class="status-badge status--active">Активен</span></td>
+                                <td>Сопровождение</td>
+                                <td>
+                                    <button class="btn btn--outline btn--small">Просмотр</button>
+                                    <button class="btn btn--outline btn--small">Документы</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Петров А.</td>
+                                <td><span class="status-badge status--pending">Новый</span></td>
+                                <td>Консультация</td>
+                                <td>
+                                    <button class="btn btn--outline btn--small">Просмотр</button>
+                                    <button class="btn btn--outline btn--small">Принять</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Сидорова Е.</td>
+                                <td><span class="status-badge status--completed">Завершён</span></td>
+                                <td>Программа</td>
+                                <td>
+                                    <button class="btn btn--outline btn--small">Архив</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Documents -->
+                <div class="admin-card">
+                    <h2>📄 Документы ABA_pro</h2>
+                    <div class="document-templates">
+                        <div class="template-item">
+                            <span class="template-icon">📋</span>
+                            <span>Информированное согласие</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('consent')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">📝</span>
+                            <span>Договор / Оферта</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('contract')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">🔒</span>
+                            <span>Политика конфиденциальности</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('privacy')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">🗺️</span>
+                            <span>Карта запроса</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('map')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">📊</span>
+                            <span>Итоги консультации</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('results')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">📈</span>
+                            <span>Индивидуальная программа</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('program')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">🤝</span>
+                            <span>План сопровождения</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('support')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">📝</span>
+                            <span>Журнал кейса</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('journal')">Редактировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span class="template-icon">✓</span>
+                            <span>Чек-лист этапов</span>
+                            <button class="btn btn--outline btn--small" onclick="printDocument('checklist')">Редактировать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Email Templates -->
+                <div class="admin-card">
+                    <h2>✉️ Шаблоны писем</h2>
+                    <div class="email-templates">
+                        <div class="template-item">
+                            <span>1. После первичного контакта</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>2. Фиксация этапа</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>3. Приглашение к сопровождению</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>4. Подтверждение начала</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>5. Промежуточная фиксация</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>6. Завершение сопровождения</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>7. Временный отказ</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                        <div class="template-item">
+                            <span>8. Перенаправление</span>
+                            <button class="btn btn--outline btn--small">Копировать</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Requests -->
+                <div class="admin-card">
+                    <h2>📩 Новые запросы</h2>
+                    <div class="request-item">
+                        <div class="request-header">
+                            <strong>Анна К.</strong>
+                            <span class="request-time">Сегодня, 10:30</span>
+                        </div>
+                        <p>Запрос: Не знаю, с чего начать. Ребёнок 5 лет, проблемы с коммуникацией...</p>
+                        <div class="request-actions">
+                            <button class="btn btn--primary btn--small">Принять</button>
+                            <button class="btn btn--secondary btn--small">Отказать</button>
+                            <button class="btn btn--outline btn--small">Перенаправить</button>
+                        </div>
+                    </div>
+                    <div class="request-item">
+                        <div class="request-header">
+                            <strong>Дмитрий В.</strong>
+                            <span class="request-time">Вчера, 16:45</span>
+                        </div>
+                        <p>Запрос: Консультация для специалиста. Методические вопросы...</p>
+                        <div class="request-actions">
+                            <button class="btn btn--primary btn--small">Принять</button>
+                            <button class="btn btn--secondary btn--small">Отказать</button>
+                            <button class="btn btn--outline btn--small">Перенаправить</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="admin-card">
+                    <h2>⚡ Быстрые действия</h2>
+                    <div class="quick-actions">
+                        <a href="contacts.html" class="btn btn--primary btn--full">Просмотреть все запросы</a>
+                        <a href="#" class="btn btn--secondary btn--full">Добавить клиента</a>
+                        <a href="index.html" class="btn btn--outline btn--full">На сайт</a>
+                        <button onclick="exportData({}, 'aba_pro_backup')" class="btn btn--outline btn--full">Экспорт данных</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Check admin authentication
+        const auth = checkAuth('owner');
+        if (!auth) {
+            window.location.href = 'cabinet.html';
+        }
+    </script>
+</body>
+</html>
